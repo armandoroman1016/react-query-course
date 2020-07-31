@@ -6,8 +6,12 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
+    "axios": "^0.19.2",
+    "prettier": "^2.0.5",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-query": "^2.5.6",
+    "react-query-devtools": "^2.4.1",
     "react-scripts": "3.4.1"
   },
   "scripts": {
@@ -30,5 +34,19 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-react": "^7.20.5",
+    "eslint-plugin-react-hooks": "^4.0.8"
+  },
+  "prettier": {
+    "jsxSingleQuote": false,
+    "printWidth": 80,
+    "tabWidth": 4,
+    "bracketSpacing": true,
+    "trailingComma": "es5",
+    "jsxBrackets": true
   }
 }
