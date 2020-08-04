@@ -1,8 +1,8 @@
 import React from "react";
-import { usePokemon } from "../Queries/queries";
+import { useBerries } from "../Queries/queries";
 
-export default function Pokemon({ qk }) {
-    const queryInfo = usePokemon(qk);
+export default function Berries({ qk }) {
+    const queryInfo = useBerries(qk);
 
     return queryInfo.isLoading ? (
         "Loading ..."

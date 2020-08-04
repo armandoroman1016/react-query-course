@@ -1,13 +1,14 @@
 import React from "react";
-import { usePokemon } from "../Queries/usePokemon";
+import { usePokemon } from "../Queries/queries";
 
 export default function Count({ qk }) {
     const queryInfo = usePokemon(qk);
-    console.log(queryInfo);
     return (
         <div>
             {queryInfo.isSuccess
-                ? `The amount of pokemon is ${queryInfo.data.length}`
+                ? `The amount of ${
+                      qk.charAt(0).toUpperCase() + qk.substring(1)
+                  } is ${queryInfo.data.length}`
                 : null}
         </div>
     );
